@@ -22,7 +22,7 @@ Used at the Verify step of the lifecycle and whenever tests are written.
   3. Paying merchant at the largest plan size (limits, slow pages, big tables).
   4. Billing edge: trial ending, cancelled, failed payment, downgrade.
   5. Non-English store / different currency / far-away timezone.
-  6. Mobile-only user at 390 px.
+  6. Mobile-only user at 350 px.
   7. Admin/staff (role gates, impersonation, audit log).
   8. Hostile user (other workspace's IDs, tampered input, prompt injection
      into AI features).

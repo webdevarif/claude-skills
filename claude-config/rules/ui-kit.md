@@ -36,5 +36,5 @@ Applies to every Next.js app, Shopify app and WordPress plugin.
 ## Before any UI card
 - Research comparable apps, check the real data, and test with the largest
   plan size. Never ship the literal ask as the design.
-- Check at 1440 / 820 / 390 px: cut words, sideways scroll, JS errors,
+- Check at 1440 / 820 / 350 px: cut words, sideways scroll, JS errors,
   duplicate elements.
