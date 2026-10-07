@@ -31,7 +31,7 @@ Adds to the global lifecycle in ~/.claude/CLAUDE.md.
 ## Verify live
 - Confirm it is really live: extension version in the storefront asset URL,
   the new code inside the served file, the admin bundle.
-- Test on the dev store with Playwright at 1440 / 820 / 390 px using the
+- Test on the dev store with Playwright at 1440 / 820 / 350 px using the
   theme's real font. Each live check usually finds the next bug: fix it the
   same way (branch, test, PR).
 - Storefront changes: test first in a local harness (static page with the

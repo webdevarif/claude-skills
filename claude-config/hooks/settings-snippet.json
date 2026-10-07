@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:/Users/User/.claude/hooks/block-dangerous.js\"",
+            "timeout": 10,
+            "statusMessage": "Safety check"
+          }
+        ]
+      }
+    ]
+  }
+}
