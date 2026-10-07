@@ -18,7 +18,7 @@ Used at the Verify step of the lifecycle and whenever tests are written.
 - Until then personas are ASSUMED; label them so in every report.
 - Default SaaS persona set (adapt per project):
   1. New free user, empty account (first-run, empty states, onboarding).
-  2. Platform merchant on the free tier (install → connect → first value).
+  2. Platform merchant on the free tier (install, connect, first value).
   3. Paying merchant at the largest plan size (limits, slow pages, big tables).
   4. Billing edge: trial ending, cancelled, failed payment, downgrade.
   5. Non-English store / different currency / far-away timezone.

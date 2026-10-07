@@ -10,14 +10,16 @@ cp claude-config/CLAUDE.md ~/.claude/CLAUDE.md
 mkdir -p ~/.claude/rules && cp claude-config/rules/*.md ~/.claude/rules/
 ```
 
-Then run `/context` in a new session: `CLAUDE.md` and `rules/context7.md`
-load at start; `ui-kit.md`, `shopify-app.md` and `qa-personas.md` load only
-when a matching file is read or edited (their `paths:` frontmatter).
+Then run `/context` in a new session: `CLAUDE.md`, `rules/context7.md` and
+`rules/human-writing.md` load at start; `ui-kit.md`, `shopify-app.md` and
+`qa-personas.md` load only when a matching file is read or edited (their
+`paths:` frontmatter).
 
 | File | Loads |
 | --- | --- |
 | `CLAUDE.md` | every session |
 | `rules/context7.md` | every session |
+| `rules/human-writing.md` | every session (no AI-style symbols or stock phrases) |
 | `rules/ui-kit.md` | UI files (`.tsx`, `.css`, `.liquid`, `.php`, kit folders) |
 | `rules/shopify-app.md` | Shopify app files (`shopify.app*.toml`, `extensions/**`, `app/routes/**`) |
 | `rules/qa-personas.md` | test files and Playwright/Vitest config |
