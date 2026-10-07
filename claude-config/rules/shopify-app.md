@@ -47,7 +47,7 @@ Adds to the global lifecycle in ~/.claude/CLAUDE.md.
   shop/redact) must answer 200 and 401 on bad HMAC.
 
 ## Listing and images
-- Feature image 1600×900, SEO-friendly file name and alt text.
+- Feature image 1600x900, SEO-friendly file name and alt text.
 - Look at competitor thumbnails first. Bold coloured backgrounds with real
   product context beat plain white ones on the App Store.
 - App must not drop storefront Lighthouse by more than 10 points.
