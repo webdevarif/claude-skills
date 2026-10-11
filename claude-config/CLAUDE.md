@@ -72,9 +72,9 @@ the file isn't in context, Read it first)
 
 ## Tools and brands
 - `/graphify`: use the graphify skill before anything else.
-- Firecrawl has three accounts, each its own MCP server: `firecrawl`,
-  `firecrawl-2`, `firecrawl-3` (keys live in ~/.claude.json, never print
-  them). Use them in that order. When one is out of credits (402 or
+- Firecrawl has four accounts, each its own MCP server: `firecrawl`,
+  `firecrawl-2`, `firecrawl-3`, `firecrawl-4` (keys live in ~/.claude.json,
+  never print them). Use them in that order. When one is out of credits (402 or
   "insufficient credits"), retry on the next and tell me which one ran out.
   The `firecrawl` CLI and the firecrawl skills are logged in to the
   `firecrawl-2` account, one more fallback.
