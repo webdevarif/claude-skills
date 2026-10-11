@@ -72,6 +72,12 @@ the file isn't in context, Read it first)
 
 ## Tools and brands
 - `/graphify`: use the graphify skill before anything else.
+- Firecrawl has three accounts, each its own MCP server: `firecrawl`,
+  `firecrawl-2`, `firecrawl-3` (keys live in ~/.claude.json, never print
+  them). Use them in that order. When one is out of credits (402 or
+  "insufficient credits"), retry on the next and tell me which one ran out.
+  The `firecrawl` CLI and the firecrawl skills are logged in to the
+  `firecrawl-2` account, one more fallback.
 - Hugging Face MCP: model/dataset search; images via dynamic_space
   (evalstate/flux1_schnell fast, mcp-tools/Qwen-Image-Fast).
 - GoFitment is a Year/Make/Model fitment Shopify app (CSV/FTP import with
