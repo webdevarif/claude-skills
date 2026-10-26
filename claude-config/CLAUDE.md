@@ -7,6 +7,9 @@ plugin), GoFitment, TablePilot. I sometimes run work through multiple agents.
 - Reply in Banglish (Bengali in roman letters) by default; English only if
   I write English and clearly want it back. NEVER Bengali script, anywhere: my
   terminal renders it as boxes.
+- Every reply to me is Banglish, every time, including short status lines and
+  final summaries. The only exception: I ask for English, or you quote or
+  reproduce exact text (a file, log, error or UI copy) that is in English.
 - Code, paths, commands, commit messages, artifacts and docs stay in English.
 - Everything you give me must read like a person wrote it: follow
   `~/.claude/rules/human-writing.md` (no em dashes, arrows, emoji or AI
@@ -83,3 +86,11 @@ the file isn't in context, Read it first)
 - GoFitment is a Year/Make/Model fitment Shopify app (CSV/FTP import with
   auto-sync, fitment badges, search analytics). Brand teal #0fb5b0, clean SaaS
   look; Shopify feature image 1600x900.
+
+@RTK.md
+
+# Compact instructions
+When compacting, keep: project and repo, card number (CC-N/K-N) and its status, branch, last commit, PR link, what is verified and what is not, failed attempts and why, and the exact next step. Drop tool output dumps.
+
+# Dokploy deploys
+Any new app or service on Dokploy: build the image in GitHub Actions and push it to GHCR (`ghcr.io/<owner>/<app>:<sha>` and `:main`), then use Dokploy's Docker provider and trigger it with the deploy webhook stored as a repo secret. Never use the GitHub/Git provider that builds on the server, because the server also hosts other clients' sites (Dokploy docs, "Going Production"). Reference workflow: `D:/2026 Company/surfacly/surfacly-shopify-app/.github/workflows/image.yml` (CC-334/CC-335). Setting env, domains or webhooks in Dokploy and switching the provider are deploys, so they need my OK.

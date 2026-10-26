@@ -1,0 +1,81 @@
+{
+  "_comment": "User scope MCP servers. ${NAME} values come from ~/.claude-secrets.env (outside the repo, never committed). scripts/restore-mac.sh fills them in and runs claude mcp add-json --scope user for each server.",
+  "servers": {
+    "shopify-dev": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@shopify/dev-mcp@latest"]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": { "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}" }
+    },
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/${FIRECRAWL_KEY_1}/v2/mcp"
+    },
+    "firecrawl-2": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/${FIRECRAWL_KEY_2}/v2/mcp"
+    },
+    "firecrawl-3": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/${FIRECRAWL_KEY_3}/v2/mcp"
+    },
+    "firecrawl-4": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/${FIRECRAWL_KEY_4}/v2/mcp"
+    },
+    "chrome-mcp-server": {
+      "type": "http",
+      "url": "http://127.0.0.1:12306/mcp"
+    },
+    "pagespeed-insights": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "-p", "pino-pretty", "-p", "pagespeed-insights-mcp", "pagespeed-insights-mcp"],
+      "env": { "GOOGLE_API_KEY": "${GOOGLE_API_KEY}" }
+    },
+    "sentry": {
+      "type": "http",
+      "url": "https://mcp.sentry.dev/mcp"
+    },
+    "posthog": {
+      "type": "http",
+      "url": "https://mcp.posthog.com/mcp"
+    },
+    "hf-mcp-server": {
+      "type": "http",
+      "url": "https://huggingface.co/mcp?login"
+    },
+    "oyostaff": {
+      "type": "http",
+      "url": "https://oyostaff.oyolloo.com/api/mcp",
+      "headers": { "Authorization": "Bearer ${OYOSTAFF_TOKEN}" }
+    },
+    "figma-pat": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp", "--stdio"],
+      "env": { "FIGMA_API_KEY": "${FIGMA_API_KEY}" }
+    },
+    "figma-dev": {
+      "type": "http",
+      "url": "http://127.0.0.1:3845/mcp"
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "cloudflare-api": {
+      "type": "http",
+      "url": "https://mcp.cloudflare.com/mcp"
+    }
+  }
+}
