@@ -1,0 +1,21 @@
+# Heavy folders created inside skills at run time (seo has a venv and browsers)
+.venv/
+venv/
+ms-playwright/
+node_modules/
+__pycache__/
+*.pyc
+
+# Local only skill buckets
+/learned/
+/synced/
+
+# Secrets never belong here
+*.env
+secrets.env
+.claude-secrets.env
+claude-secrets.env
+*.7z
+
+.DS_Store
+Thumbs.db
